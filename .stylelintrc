@@ -1,0 +1,17 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "customSyntax": "postcss-less",
+  "rules": {
+    "selector-class-pattern": true,
+    "no-descending-specificity": true,
+    "no-duplicate-selectors": true,
+    "color-function-notation": true,
+    "font-family-no-missing-generic-family-keyword": true,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ]
+  }
+}

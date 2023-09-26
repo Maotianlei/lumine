@@ -1,0 +1,11 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/.prettierrc
+**/.prettierrc.md
+**/.stylelintrc
+**/.stylelintrc.md
+**/README.md
+**/build
+**/.husky\_

@@ -1,3 +1,26 @@
 {
-  "extends": "next/core-web-vitals"
+    "root": true,
+    // https://nodejs.cn/eslint/command-line-interface/#--env,此选项启用特定环境
+    // 浏览器 commonjs ECMAScript6功能 node jest
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "jest": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "next/core-web-vitals",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended"
+    ],
+    "plugins": ["prettier", "react", "@typescript-eslint/eslint-plugin"],
+    "rules": {
+        "prettier/prettier": "error", //prettier格式报错
+        "react/display-name": 0, //组件定义时需要定义组件名称
+        "react/prop-types": 0, //禁止组件中有十分明确的props属性
+        "react-hooks/rules-of-hooks": "error", // 检查 Hook 的规则
+        "react-hooks/exhaustive-deps": "warn" // 检查 effect 的依赖
+    }
 }
